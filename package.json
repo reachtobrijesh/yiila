@@ -1,0 +1,30 @@
+{
+	"name": "yiila",
+	"description": "Yiila framework",
+	"main": "./lib/index",
+	"author": "Mik.Bulatov",
+	"version": "0.0.1",
+	"keywords": [
+		"yii",
+		"framework",
+		"model",
+		"validator",
+		"daemon"
+	],
+	"dependencies": {
+		"request": ">=2.0.0",
+		"jsdom": ">=0.5.0",
+		"async": ">=0.2.5",
+		"colors": ">=0.6.0",
+		"underscore": ">=0.0.0",
+		"underscore.string": ">=0.0.0",
+		"harmony-reflect": ">=0.0.4",
+		"fs-ext": ">=0.2.3",
+		"memcached": ">=0.2.2",
+		"moment": ">=2.0.0",
+		"wordwrap": "0.0.2",
+		"forever": ">=0.10.0",
+		"forever-monitor": "git://github.com/nodejitsu/forever-monitor.git#master",
+		"gearman": "git://github.com/mreinstein/node-gearman.git#master"
+	}
+}
