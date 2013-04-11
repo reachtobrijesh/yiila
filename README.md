@@ -9,6 +9,9 @@ I haven't a time to learn different frameworks. They grow up faster than i can v
 var Yiila = require('yiila');
 
 (function() {
+	// enable debug mode to view trace messages into the console
+	GLOBAL.YIILA_DEBUG = true;
+
 	var config = {
 		'name': 'Test application';
 		'preload': ['log'],
@@ -16,12 +19,15 @@ var Yiila = require('yiila');
 			'log': {
 				'class': 'CLogRouter',
 				'routes': [
-					'class': 'CConsoleLogRoute'
+					{
+						'class': 'CConsoleLogRoute',
+						'enabled': GLOBAL.YIILA_DEBUG || false
+					}
 				]
 			}
 		}
 	};
 
 	Yiila.createApplication('CApplication', config).run();
-}())
+}());
 ```
