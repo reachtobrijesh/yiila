@@ -48,4 +48,4 @@ At the present time Yiila implemented:
 * Validators
 * Cache classes (Memcached only)
 
-To learn more about components see examples and source codes. Don't forget to vist official site of Yii framework.
+To learn more about components see examples and source codes. Don't forget to visit the official site of Yii framework.
