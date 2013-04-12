@@ -12,14 +12,15 @@ var Yiila = require('../../lib/'),
 (function() {
 	
 	var logger = Yiila.getLogger();
-	logger.autoFlushTimer = 60*1000;
 	logger.autoDump = true;
 	
 	var app = Yiila.createApplication('CApplication', path.resolve(__dirname,'./config/server'));
 	
 	if (GLOBAL.YIILA_DEBUG)
 		logger.autoFlush = 1;
-	
+	else
+		logger.autoFlushTimer = 60*1000;
+
 	app.run();
 	
 	var params = app.getParams();
